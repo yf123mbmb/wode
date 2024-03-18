@@ -2,23 +2,52 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
+    <title>不缓存页面</title>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    
     <title>添加到桌面demo</title>
     <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* 设置 flex 容器为纵向排列 */
+            justify-content: flex-end;
+            /* 垂直方向上底部对齐 */
+            align-items: center;
+            /* 水平居中 */
+            height: 100vh;
+            /* 设置容器高度为视口的高度 */
+            width: 100vw;
+            /* 设置容器宽度为视口的宽度 */
+            background-color: lightgray;
+            /* 为了便于观察，添加背景颜色 */
+        }
+
         .add-button {
-            position: absolute;
-            top: 100px;
-            left: 100px;
-            size: 100px 100px;
+            margin-bottom: 50px;
+            /* 设置按钮与容器顶部的距离 */
+            margin-left: 20px;
+            /* 设置按钮与容器左侧的距离 */
+            padding: 15px 30px;
+            /* 设置按钮内边距 */
+            font-size: 36px;
+            /* 设置按钮字体大小 */
         }
     </style>
-    <script src="index.js?123" defer></script>
+    <!-- <script src="index.js?123" defer></script> -->
     <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
-    <div>我是大哥</div>
-    <button class="add-button">添加到桌面</button>
+    <div class="container">
+        <!-- 在这里放置其他内容 -->
+        <button class="add-button">添加到桌面</button>
+    </div>
+
+
 </body>
 
 </html>
