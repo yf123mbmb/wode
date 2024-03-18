@@ -36,6 +36,17 @@
             font-size: 36px;
             /* 设置按钮字体大小 */
         }
+
+        .add-button2 {
+            margin-bottom: 250px;
+            /* 设置按钮与容器顶部的距离 */
+            margin-left: 20px;
+            /* 设置按钮与容器左侧的距离 */
+            padding: 15px 30px;
+            /* 设置按钮内边距 */
+            font-size: 36px;
+            /* 设置按钮字体大小 */
+        }
     </style>
     <!-- <script src="index.js?123" defer></script> -->
     <link rel="manifest" href="manifest.webmanifest">
@@ -45,8 +56,16 @@
     <div class="container">
         <!-- 在这里放置其他内容 -->
         <button class="add-button">添加到桌面1</button>
+        <button class="add-button2" onclick="testServer()">刷新1</button>
+
     </div>
 
+    <script>
+        function testServer() {
+            console.log("刷新");
+            window.location.reload();
+        }
+    </script>
 
 </body>
 
