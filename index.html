@@ -48,6 +48,8 @@
             /* 设置按钮字体大小 */
         }
     </style>
+    <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+
     <script src="index.js?123" defer></script>
     <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -61,11 +63,14 @@
     </div>
 
     <script>
+          var vConsole = new window.VConsole();
+
         function testServer() {
             console.log("刷新", window.location.href);
-            const url = window.location.href.split('?')[0]
-            window.location.href = url + '?' + Date.now()
-           // window.location.reload();
+            // const url = window.location.href.split('?')[0]
+            // window.location.href = url + '?' + Date.now()
+            // // window.location.reload();
+            window.location.reload()
         }
     </script>
 
